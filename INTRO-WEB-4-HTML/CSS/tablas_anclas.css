@@ -1,0 +1,20 @@
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+.lista-super{
+   color:black;
+   background-color: antiquewhite; 
+}
+
+.total {
+    background-color: rgb(12, 228, 76);
+    color: #fff;
+}
