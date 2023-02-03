@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de viaje</h1>
+
+    <label for="emails">Seleccione su lugar a viajar</label>
+<input
+  type="text"
+  multiple
+  name="lugar"
+  id="text"
+  list="drawflugares"
+  required
+  size="64"
+/>
+
+<datalist id="drawflugares">
+  <option value="Tepic">Nayarit</option>
+  <option value="Guadalajara">Jalisco</option>
+  <option value="Zapopan">Jalisco</option>
+  <option value="Tlaquepaque">Jalisco</option>
+  <option value="Los Cabos">Baja California</option>  
+</datalist>
+
+<br>
+<br>
+
+<h2>Seleccione su metodo de transporte</h2>
+
+
+
+<form>
+    
+     <input type="radio" name="gender" value="female"> Autobus<br>
+     <input type="radio" name="gender" value="other"> Combi<br>
+
+</form>
+
+<br>
+<br>
+
+<section>
+    <h2>Datos del viaje</h2>
+
+    <form>
+        <fieldset>
+            <legend>Detalles de tu viaje</legend>           
+            <div>
+                <label>Numero de personas a viajar</label>
+                <input type="tel" placeholder="Numero">
+            </div>
+
+            <div>
+                <label>Noches de estadia</label>
+                <input type="text" placeholder="Noches">                
+            </div>
+
+            <div>
+                <label>Comentario</label>
+                <Textarea></Textarea>
+    
+                <input type="submit" value="Enviar">
+
+            </div>   
+
+            
+
+            
+
+
+        </fieldset>
+
+    </form>
+</section>
+
+<section>
+    <h2>Datos de contacto</h2>
+
+    <form>
+        <fieldset>
+            <legend>Contáctanos llenando todos los campos</legend>
+
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="Nombre">
+            </div>
+
+            <div>
+                <label>Teléfono</label>
+                <input type="tel" placeholder="Teléfono">
+            </div>
+
+            <div>
+                <label>Correo</label>
+                <input type="email" placeholder="Correo">                
+            </div>
+
+            <div>
+                <label>Comentario</label>
+                <Textarea></Textarea>
+    
+                <input type="submit" value="Enviar">
+
+            </div>   
+
+            
+
+            
+
+
+        </fieldset>
+
+    </form>
+</section>
+
+
+
+
+</body>
+</html>
