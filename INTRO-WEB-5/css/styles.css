@@ -1,127 +1,119 @@
 body{
-    font-family: 'Open sans', Arial, Tahoma;
+    font-family: 'Open sans', Arial, Tahoma; /*CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element. */
     font-weight: 400;
     font-size: 14px;
     color: #363636;
-    background: beige;
-
+    background: #ededed;
 }
 
-.nombre {
-    color: red;
-}
 
-/*Header*/
-h1 {
+/* HEADER*/
+h1{
     text-transform: uppercase;
+
 }
 
-#photo-header {
+h1 span{
+    color: #f0563d;
+}
+
+#photo-header{
     text-align: center;
-    border-bottom-style: double;
-    border-bottom-color: #1316b1;
+    border-bottom-color: #8d8d8d;
     border-bottom-width: 5px;
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> 2dda84b6259dc20e08131023706db6b8de539a0a
+    border-bottom-style: double;
 }
 
-#photo img {
-    background-color: #f1eaea;
-    border-radius: 60%;
+#photo img{
+    background-color: #3f43aa;
     width: 120px;
     height: 120px;
+    border-radius: 50%;
 }
 
-.container {
+.container{
     max-width: 900px;
-    background: rgb(237, 240, 236);
+    background: #ffffff;
     margin-top: 80px;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin: 100px 30px;
 }
 
-.menu ul {
+.menu ul{
     text-align: center;
     margin: auto;
     padding: 0%;
-    list-style-type: none;
+    list-style-type:none;
 }
-
 .menu ul li{
     display: inline-block;
     position: relative;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 2dda84b6259dc20e08131023706db6b8de539a0a
 }
-
-.menu ul li a{
-    background: black;
-    color: white;
-<<<<<<< HEAD
-    font-size: 10px; /* The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth. */
-    text-decoration: none; /* The text-decoration shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, text-decoration-style, and the newer text-decoration-thickness property. */
+.menu ul li a {
+    background: #363636;
+    color: #ffffff;
+    font-size: 10px;
+    text-decoration: none;
     display: block;
     padding: 5px;
 }
 
-.menu ul li ul{
-    position: absolute;    /* El posicionamiento absolute hace que un elemento se coloque respecto a su contenedor posicionado mas cercano, si no encuentra ningún contenedor cercano, el elemento se colocara respecto al viewport. */
+/* La propiedad position de CSS especifica cómo un elemento es 
+posicionado en el documento. Las propiedades top, right, bottom, 
+y left determinan la ubicación final de los elementos posicionados. */
+
+
+.menu ul li ul{   
+    position:absolute;
     top: 25px;
     left: 0;
-    list-style-type: none; /* Elimina los estilos del elemento */
-    display: none; /*Oculta los elementos*/
+    list-style-type: none;
+    display: none;
     height: auto;
 }
 
-.menu ul li:hover ul {
+.menu ul li:hover ul{
     display: block;
 }
-
-.menu ul li ul li {
+.menu ul li ul li{
     display: block;
     width: 60px;
     height: 20px;
     margin: 0;
     text-align: left;
     font-size: 14px;
-
 }
 
-/* Fin de header */
-
+/* fin de header */
 h2 {
-    color: red;
+    color:#f0563d;
     text-transform: uppercase;
-
 }
+ h2::before{
+    content: "//  ";
+ }
 
-h2::before{
-    content: "// "
-}
-
-.clearfix:before{
+  .clearfix:before{
     display: table;
     line-height: 1;
-    content: "/";
-}
+    content: "";
+ } 
 
-.pull-left{
+
+
+
+
+
+
+ .pull-left{
     float:left
-}
+ }
 
-.row{
+ .row{
     padding-left: 10px;
     padding-right: 10px;
-}
-
+ }
 .col-60{
     width: 60%;
 }
@@ -129,30 +121,37 @@ h2::before{
 .col-10{
     width: 10%;
 }
-
-col-20{
+.col-20{
     width: 20%;
+}
+
+.col-40{
+    width: 40%;
+}
+
+.col-80{
+    width: 80;
 }
 
 .col-90{
     width: 90%;
 }
 
-.containerflex{
-    display: flex;
-}
+
+
+/***************/
 
 .education ul{
     list-style: none;
     margin:0;
-    padding: 0; 
+    padding: 0;	
 }
-.education .year {
+    .education .year {
         font-size: 1.1em;
         font-weight: bold;
     }
     
-.education .description {
+    .education .description {
         background: #EEEEEE;
         border-bottom: 1px solid #DDDDDD;
         padding: 10px;
@@ -161,11 +160,11 @@ col-20{
         box-sizing: border-box; 
     }
 
-.education .description h3, .education .description p{
+    .education .description h3, .education .description p{
         margin-top: 0;
         margin-bottom: 0;
     }
-.education .description p::after {
+    .education .description p::after {
         content: "";
         position: absolute;
         border: 8px solid transparent ;
@@ -174,44 +173,117 @@ col-20{
         left: -16px;
     }
 
+
     .experience .job .where{
         font-size: 1.2em;
         font-weight: bold;
+    }
+
+    .year{
+        font-size: 0.8em ;
     }
 
     .profesion{
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 2em;
-        font-size: .9em; 
-        text-align: justify;       
+        font-size: 0.9em;
+        text-align:justify;
     }
-
     .description{
         margin-top: 0;
         margin-left: 2em;
         text-align: justify;
+
     }
 
-    .containerskills {
-        width: 100%;
-        background-color: #ddd;
-      }
-      
-      .skills {
-        text-align: right;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: white;
-      }
+    /* .skills {
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+	}
+		.skills-item {				
+			color: #FFFFFF;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 2px 0 2px 5px;
+			margin-top: 5px;				
+			background: #F0563D;
+			
+		}
+		.skills-item[data-percent="10"] { width: 10% }
+		.skills-item[data-percent="20"] { width: 20% }
+		.skills-item[data-percent="30"] { width: 30% }
+		.skills-item[data-percent="40"] { width: 40% }
+		.skills-item[data-percent="50"] { width: 50% }
+		.skills-item[data-percent="60"] { width: 60% }
+		.skills-item[data-percent="70"] { width: 70% }
+		.skills-item[data-percent="80"] { width: 80% }
+		.skills-item[data-percent="90"] { width: 90% } */
 
-      .html {width: 90%; background-color: #04AA6D;}
-      .css {width: 80%; background-color: #2196F3;}
-      .js {width: 65%; background-color: #f44336;}
-      .python {width: 60%; background-color: #808080;}
-=======
-    text-decoration: none;
-    display: block;
-    padding: 3px;
+
+.html { 
+        color: #DDDDDD;
+        margin: 3px;
+        list-style-type: none; 
+        text-align: right; 
+        width: 90%; 
+        background-color: #04AA6D;}
+.css { color: #DDDDDD;
+    margin: 3px;
+    list-style-type: none; 
+    text-align: right;
+    width: 80%; 
+    background-color: #2196F3;
 }
->>>>>>> 2dda84b6259dc20e08131023706db6b8de539a0a
+.js { 
+    color: #DDDDDD;
+    margin: 3px;
+    list-style-type:none; 
+    text-align: right;
+    width: 65%; 
+    background-color: #f44336;
+}
+.python { 
+    color: #DDDDDD;
+    margin: 3px;
+    list-style-type: none;
+    text-align: right; 
+    width: 60%; 
+    background-color: #808080;
+}
+
+/* fin skills */
+
+.icon-star{
+    background:url(../imgs/star-grey.png)no-repeat;
+    width: 110px;
+    height: 14px;
+    float: right;    
+}
+
+.icon-star-red{
+    background:url(../imgs/star-red.png)no-repeat;
+    width: 110px;
+    height: 14px;
+    float: left;    
+}
+
+.obj-star{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 5px;
+}
+
+.hobby{
+    background: red;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    
+}
+
+.p-footer{
+    text-align: right;
+    font-size: 1em;
+}
