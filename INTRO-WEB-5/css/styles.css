@@ -21,7 +21,11 @@ h1 {
     border-bottom-style: double;
     border-bottom-color: #1316b1;
     border-bottom-width: 5px;
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> 2dda84b6259dc20e08131023706db6b8de539a0a
 }
 
 #photo img {
@@ -51,12 +55,17 @@ h1 {
 .menu ul li{
     display: inline-block;
     position: relative;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 2dda84b6259dc20e08131023706db6b8de539a0a
 }
 
 .menu ul li a{
     background: black;
     color: white;
+<<<<<<< HEAD
     font-size: 10px; /* The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth. */
     text-decoration: none; /* The text-decoration shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, text-decoration-style, and the newer text-decoration-thickness property. */
     display: block;
@@ -200,3 +209,9 @@ col-20{
       .css {width: 80%; background-color: #2196F3;}
       .js {width: 65%; background-color: #f44336;}
       .python {width: 60%; background-color: #808080;}
+=======
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+}
+>>>>>>> 2dda84b6259dc20e08131023706db6b8de539a0a
