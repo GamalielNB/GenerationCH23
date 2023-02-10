@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cálculo del IMC</title>
+  </head>
+  <body>
+    <h1>Cálculo del IMC</h1>
+    <form>
+      <label for="weight">Peso (kg):</label>
+      <input type="text" id="weight" name="weight"><br><br>
+      <label for="height">Altura (m):</label>
+      <input type="text" id="height" name="height"><br><br>
+      <button type="button" onclick="calculateBMI()">Calcular IMC</button>
+    </form>
+    <br>
+    <h2>Resultado:</h2>
+    <p id="result"></p>
+    <script>
+      function calculateBMI() {
+        var weight = document.getElementById("weight").value;
+        var height = document.getElementById("height").value;
+        var bmi = weight / (height * height);
+
+        var classification;
+        if (bmi < 16) {
+          classification = "(a) Menor a 16: Criterio de ingreso.";
+        } else if (bmi >= 16 && bmi < 17) {
+          classification = "(b) 16 a 16.9: infrapeso.";
+        } else if (bmi >= 17 && bmi < 18.5) {
+          classification = "(c) 17 a 18.4: bajo peso.";
+        } else if (bmi >= 18.5 && bmi < 25) {
+          classification = "(d) 18.5 a 24.9: peso normal.";
+        } else if (bmi >= 25 && bmi < 30) {
+          classification = "(e) 25 a 29.9: sobrepeso.";
+        } else if (bmi >= 30 && bmi < 35) {
+          classification = "(f) 30 a 34.9: obesidad premórbida.";
+        } else if (bmi >= 35 && bmi < 40) {
+          classification = "(g) 40 a 45: obesidad mórbida.";
+        } else {
+          classification = "(h) Mayor a 45: obesidad hipermórbida.";
+        }
+        
+        document.getElementById("result").innerHTML =
+          "Su IMC es " + bmi.toFixed(2) + " " + classification;
+      }
+    </script>
+  </body>
+</html>
