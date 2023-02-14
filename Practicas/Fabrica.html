@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function businessHours(dayNumber, hourNumber) {
+          if (hourNumber >= 9 && hourNumber <= 18) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+    
+        function checkBusinessHours() {
+          var dayNumber = parseInt(prompt("Enter the day number:"));
+          var hourNumber = parseInt(prompt("Enter the hour number (using the 24-hour clock system):"));
+    
+          if (businessHours(dayNumber, hourNumber)) {
+            alert("It's business hours.");
+          } else {
+            alert("It's not business hours.");
+          }
+        }
+      </script>
+
+    <script>
+        function businessHours(dayNumber, hourNumber) {
+          if (hourNumber >= 9 && hourNumber <= 18) {
+            return true;
+          }
+          return false;
+        }
+      </script>
+</head>
+<body>
+    <button onclick="checkBusinessHours()">Check Business Hours</button>
+</body>
+</html>
+
+
