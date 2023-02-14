@@ -1,9 +1,9 @@
 let lista = [12,5,80,34,7];
 
-lista.sort(
-    function(valor1,valor2){
-        return valor1 > calor2;
+let lNueva = lista.map(
+    function(valor){
+        return valor 
     }
 );
 
-console.log(lista);
+console.log(lNueva);

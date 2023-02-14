@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Ejercico 3 JS05</title>
+</head>
+<body>
+
+    <script>
+        
+
+var numero = prompt ("Ingresa numero: ");
+
+
+function numberRange(num) {
+    switch (true) {
+      case (num >= 0 && num <= 25):
+        console.log(num + " is between 0 and 25");
+        break;
+      case (num >= 26 && num <= 100):
+        console.log(num + " is between 26 and 100");
+        break;
+      case (num > 100):
+        console.log(num + " is greater than 100");
+        break;
+      default:
+        console.log(num + " is less than 0");
+        break;
+    }
+  }
+  
+
+console.log(numberRange(numero));
+    </script>
+    
+</body>
+</html>
