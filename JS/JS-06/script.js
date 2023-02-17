@@ -60,7 +60,7 @@ var variosElementos = document.querySelectorAll(".botones");
 //Construir nuestra calculadora
 
 var input1 = document.getElementById("input1");
-var input1 = document.getElementById("input2");
+var input2 = document.getElementById("input2");
 
 var botonSuma = document.getElementById("botonSuma");
 var botonResta = document.getElementById("botonResta");
@@ -98,5 +98,92 @@ document.body.append(imagenPerrito);
 
 var resultadoQueCambia = document.getElementById("resultado");
 
-resultadoQueCambia.innerHTML = "Saludos, cambie el texto juas juas";
+//Construimos las funciones de nuestra calculadora
 
+
+
+// resultadoQueCambia.innerHTML = "Saludos, cambie el texto juas juas";
+
+function suma(){
+    let valor1 = parseFloat(input1.value); //pido numero1
+    let valor2 = parseFloat(input2.value); //pido numero2
+    let suma = valor1 + valor2; //calculo la suma
+    resultado.innerHTML = suma; //pongo el resultado en su lugar
+}
+
+function resta(){
+    let valor1 = parseFloat(input1.value); 
+    let valor2 = parseFloat(input2.value); 
+    let resta = valor1 - valor2; 
+    resultado.innerHTML = resta; 
+}
+
+function multiplicacion(){
+    let valor1 = parseFloat(input1.value); 
+    let valor2 = parseFloat(input2.value); 
+    let multiplicacion = valor1 * valor2; 
+    resultado.innerHTML = multiplicacion; 
+
+}
+
+function division(){
+    let valor1 = parseFloat(input1.value); 
+    let valor2 = parseFloat(input2.value); 
+    let division = valor1 / valor2; 
+    resultado.innerHTML = division; 
+}
+
+
+botonSuma.addEventListener("click", suma);
+botonResta.addEventListener("click", resta);
+botonMultiplicacion.addEventListener("click", multiplicacion);
+botonDivision.addEventListener("click", division);
+
+/* Como se crea un evento (addEventListener)
+
+    - node.addEventListener ("evento a escuchar"), lo que quiero que haga cuando se escuche
+
+    -addEventListener (palabra reservada para usar el evento)
+    -eventoa a escuchar (click, mouseover, etx)
+    -Lo que quiero que haga (la llamada de la funcion)
+
+
+
+*/
+
+
+/*
+
+Manipulacion del DOM
+
+
+-Metodos para acceder a elementos
+    document.getElmentById
+    document.getElmentByTagName
+    document.getElementsByClaseName
+
+-Metodos para crear elementos
+    document.createelement(etiqueta)
+    document.createTextNode(texto)
+
+-Metodos para insertar elementos
+    parentElement.append
+    parentElement.insertBefore
+    parentElement.insertAdjacentElement
+
+Metodos para modificar elementos 
+    node.oterHTML (leer o referenciar el elemento
+        node.innerHTML (modificar el elemento)
+
+*/
+
+// ******EVENTOS******
+/* Primer paso: Definir con que voy a interactuar (almaceno en una variable) */
+
+const textoAModificar = document.querySelector("#h1")
+
+// Creo una funcion que cambia de color, seguún el color que le paso como parametro
+
+function cambiarColor(color){
+    textoAModificar.style.color = color;
+}

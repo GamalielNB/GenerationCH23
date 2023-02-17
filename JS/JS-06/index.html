@@ -7,16 +7,17 @@
     <title>Calculadora del DOM</title>
 </head>
 <body>
-    <h1>Calculadora DOM</h1>
+    <h1 id="h1">Calculadora DOM</h1>
     <!-- Ingresar numeros -->
     <input type="number" id="input1" placeholder="Ingresa tu primer número: ">
-    <input type="number" id="input3" placeholder="Ingresa tu primer número: ">
+    <input type="number" id="input2" placeholder="Ingresa tu segundo número: ">
 
     <br>
     <br>
 
     <!-- Botones para las operaciones -->
-    <button id="botonSuma" class="botones">Suma</button>
+    <button onmouseover = "cambiarColor('blue')"  id="botonSuma" class="botones">Suma</button>
+
     <button id="botonResta" class="botones">Resta</button>
     <button id="botonMultiplicacion" class="botones">Multiplicación</button>
     <button id="botonDivision" class="botones">Division</button>
