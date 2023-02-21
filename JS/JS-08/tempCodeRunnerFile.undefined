@@ -1,0 +1,6 @@
+let persona = {
+    nombre: "Juan",
+       apellido : "Perez"
+}
+
+console.group(persona);
