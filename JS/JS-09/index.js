@@ -1,5 +1,6 @@
 const parrotSay = require('parrotsay-api')
  
-parrotSay('yaaay')
+parrotSay('guayabas')
   .then(console.log)
   .catch(console.error)
+  
