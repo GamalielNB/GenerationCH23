@@ -1,12 +1,19 @@
-class OperacionesArtimeticas{
-    numero0 = 0;
-    numero1 = 0;
-
-    sumar (a,b){
-        return a+b;
+class persona {
+    constructor (nombre, apellido){
+        this._nombre = nombre;
+        this._apellido = apellido;
+    
     }
 }
 
-let obj1;
-obj1 = new OperacionesArtimeticas();
-console.log(obj1.numero0);
+set nombre (nombre){
+    this._nombre = nombre;
+}
+
+get nombre(){
+    return this._nombre;
+}
+
+
+let persona3 = new persona ("Jhonny", "Deep");
+console.log(persona3.nombre);

@@ -41,7 +41,21 @@ class Empleado extends Persona {
         get departamento(){
             return this._departamento;
         }
-        nombreCompleto()
+        nombreCompleto() {
+            return this._nombre + " " + this._apellido;
+        }
+
+        //Sobre escritura
+
+        nombreCompleto(){
+            return super.nombreCompleto() + " , " + this._departamento;
+        }
+
+        // sobreescribir el método de la clase Padre Object
+
+        toString(){
+            return this.nombreCompleto();
+        }
 
 }
 
@@ -52,4 +66,23 @@ let empleado1 = new Empleado ("María", "Perez", "Sistemas");
 console.log(empleado1);
 console.log(empleado1._nombre);
 console.log(empleado1.nombreCompleto());
+
+//metodo toSctring
+console.log(empleado1.toString());
+
+
+
+
+
+
+
+// let persona3 = new persona ("Jhonny", "Deep");
+// console.log(persona3.nombre);
+
+
+// let person1 = new persona ("Juan", "Perez");
+// console.log(person1);
+
+// let person2 = new persona ("Maria", "Jimenez");
+// console.log(person2);
 
