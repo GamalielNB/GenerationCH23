@@ -8,6 +8,7 @@ public class EjecutaIf {
 		//ei.controlIf();
 		//ei.divisible();
 		//ei.comparar();
-		ei.anidado();
+		//ei.anidado();
+		ei.EstructuraMultiple
 	}
 }
