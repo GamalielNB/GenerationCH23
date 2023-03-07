@@ -1,3 +1,5 @@
+package com.oopa.clases;
+
 public class Taco {
     private String tipoDeTortilla;
     private String guisado;
@@ -31,7 +33,7 @@ public class Taco {
 
     @Override
     public String toString() {
-        return "Taco: " + tipoDeTortilla + " de " + guisado + " con " + numeroDeTortilla + " tortillas de tamaño " + tamanioDeTortilla + " a un precio de $" + precio;
+        return "Orden de taco: " + tipoDeTortilla + " de " + guisado + " con " + numeroDeTortilla + " tortillas de tamaño " + tamanioDeTortilla + " a un precio de $" + precio;
     }
 
     // Métodos get y set
