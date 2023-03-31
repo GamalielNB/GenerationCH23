@@ -7,42 +7,38 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity  //indico que mi clase Producto se convierte en una entidad JPA (persistencia de datos)
+@Entity // inidico que mi clase Producto se convierte en una entidad JAP (persistencia de Datos)
 
-@Table(name = "Producto") // especificar de forma correcta el nombre de la tabla
-
-
+@Table(name = "Producto") //especificar de forma correcta el nombre de la tabla
 
 public class Producto {
-	
+
 	@Id//el campo id es la primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) //el campo id sera generado automaticamente por la DB
     @Column(name="id", unique = true, nullable = false) //especifica el nombre de la columna en la DB
 	
+	//Atributos
 	private Long id;
 	private String nombre;
-	private String desceiption;
+	private String descripcion;
 	private String URL_Imagen;
 	private double precio;
 	
-	//Constructor vacio para el Jacson (serializador y deserealizar un objeto JAVA a JASON)
-	public Producto () {
-		
-	}
-	
-	//Constructor con todos los campos
+	//Constructor vacio para el Jackson (serializar y deserealizar un obreto JAVA a JSON)
+	public Producto() {
 
-	public Producto(Long id, String nombre, String desceiption, String uRL_Imagen, double precio) {
-		
+	} //Cierra Constructor Vacio
+
+	//Constructor con todos los campos
+	public Producto(Long id, String nombre, String descripcion, String uRL_Imagen, double precio) {
 		this.id = id;
 		this.nombre = nombre;
-		this.desceiption = desceiption;
-		this.URL_Imagen = uRL_Imagen;
+		this.descripcion = descripcion;
+		this.URL_Imagen = URL_Imagen;
 		this.precio = precio;
-	}
-	
-	//Getters and setters
+	} //Cierra Constructor con todos los campos
 
+	//Getters y Setters
 	public Long getId() {
 		return id;
 	}
@@ -59,12 +55,12 @@ public class Producto {
 		this.nombre = nombre;
 	}
 
-	public String getDesceiption() {
-		return desceiption;
+	public String getDescripcion() {
+		return descripcion;
 	}
 
-	public void setDesceiption(String desceiption) {
-		this.desceiption = desceiption;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 
 	public String getURL_Imagen() {
@@ -83,20 +79,15 @@ public class Producto {
 		this.precio = precio;
 	}
 
-	//toString (sobreescritura de metodos)
+	//ToString
 	@Override
 	public String toString() {
-		return "Producto [id=" + id + ", nombre=" + nombre + ", desceiption=" + desceiption + ", URL_Imagen="
+		return "Producto [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", URL_Imagen="
 				+ URL_Imagen + ", precio=" + precio + "]";
 	}
+	//ToString
 	
 	
 	
 	
-	
-	
-	
-	
-	
-
 }
